@@ -61,8 +61,12 @@ button {
 
 .row {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .btn {
@@ -80,6 +84,7 @@ button {
 .btn:hover {
   background-color: #fff;
   color: #111111;
+
 }
 
 .gpa-result,
