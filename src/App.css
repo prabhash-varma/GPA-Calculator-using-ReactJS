@@ -92,3 +92,8 @@ button {
 .gpa-result {
   border: 1px solid #333;
 }
+
+
+#coursename, #credits, #grades{
+  width:190px;
+}

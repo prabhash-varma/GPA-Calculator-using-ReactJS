@@ -11,10 +11,21 @@ function App() {
   const [finalgpa, setfinalgpa] = useState(null);
 
   const addToList = () => {
-    setgradeslist([
+
+    if(courseName == ""){
+      makeAlert1();
+    } else if(credits == "" || credits<0 ){
+      makeAlert2();
+    } else if(isNaN(credits)){
+      makeAlert2();
+    }
+    else {
+      console.log(parseInt(credits));
+      setgradeslist([
       ...gradeslist,
       { courseName: courseName, credits: credits, grade: grade },
     ]);
+  }
   };
 
   const calc_gpa = () => {
@@ -43,6 +54,15 @@ function App() {
     setfinalgpa(null);
   };
 
+
+  const makeAlert1 = ()=>{
+    alert("Please Enter Valid Course Name");
+  }
+  const makeAlert2 = ()=>{
+    alert("Please Enter Valid Credits");
+  }
+
+
   return (
     <div className="app-container">
       <section className="grade-form">
@@ -53,11 +73,7 @@ function App() {
             type="text"
             id="coursename"
             onChange={(event) => {
-              if (event !== null) {
-                setcourseName(event.target.value);
-              } else {
-                alert("Please Enter Valid Course Name");
-              }
+                setcourseName(event.target.value);              
             }}
           ></input>
 
@@ -66,11 +82,7 @@ function App() {
             type="text"
             id="credits"
             onChange={(event) => {
-              if (event !== null) {
                 setcredits(event.target.value);
-              } else {
-                alert("Please Enter Credits");
-              }
             }}
           ></input>
 
@@ -106,7 +118,7 @@ function App() {
       </section>
 
       <section className="results-container">
-        <h3>Final GPA:{finalgpa}</h3>
+        <h3>Final GPA: {finalgpa}</h3>
 
         <div className="results">
           {gradeslist.map((obj) => {
