@@ -1,8 +1,8 @@
-.gpa{
-    border:black solid 1px;
-    
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top:20px;
-    margin-bottom: 20px;
-}
+.gpa {
+    border: 1px solid #333;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    padding: 1rem;
+    margin-top: 2rem;
+    gap: 5px;
+  }
