@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/GPA-Calculator-using-ReactJS/static/css/main.4a460d68.css",
+    "main.css": "/GPA-Calculator-using-ReactJS/static/css/main.43b40587.css",
     "main.js": "/GPA-Calculator-using-ReactJS/static/js/main.a5e97a9b.js",
     "static/js/787.aa963503.chunk.js": "/GPA-Calculator-using-ReactJS/static/js/787.aa963503.chunk.js",
     "static/media/logo.svg": "/GPA-Calculator-using-ReactJS/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/GPA-Calculator-using-ReactJS/index.html",
-    "main.4a460d68.css.map": "/GPA-Calculator-using-ReactJS/static/css/main.4a460d68.css.map",
+    "main.43b40587.css.map": "/GPA-Calculator-using-ReactJS/static/css/main.43b40587.css.map",
     "main.a5e97a9b.js.map": "/GPA-Calculator-using-ReactJS/static/js/main.a5e97a9b.js.map",
     "787.aa963503.chunk.js.map": "/GPA-Calculator-using-ReactJS/static/js/787.aa963503.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a460d68.css",
+    "static/css/main.43b40587.css",
     "static/js/main.a5e97a9b.js"
   ]
 }
